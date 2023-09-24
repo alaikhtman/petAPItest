@@ -1,8 +1,7 @@
-package api.qa.picnic.getAccountsCreditCardAPITest;
+package api.qa.check24.getAccountsCreditCardAPITest;
 
-import api.qa.picnic.BaseTest;
+import api.qa.check24.BaseTest;
 import assertions.AccountsAssertion;
-import assertions.CoreAssertions;
 import dataProvider.responses.AccountsCreditCardInfo;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;

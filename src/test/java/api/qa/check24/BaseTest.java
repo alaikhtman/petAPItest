@@ -1,4 +1,4 @@
-package api.qa.picnic;
+package api.qa.check24;
 import io.restassured.RestAssured;
 
 import org.junit.jupiter.api.BeforeAll;
