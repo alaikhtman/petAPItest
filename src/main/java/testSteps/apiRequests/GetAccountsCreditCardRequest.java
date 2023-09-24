@@ -7,16 +7,15 @@ import static testSteps.spec.apiSpec.requestSpec;
 import static testSteps.spec.apiSpec.responseSpec;
 
 
-public class GetCartRequest {
+public class GetAccountsCreditCardRequest {
 
-    @Step("Send GET request with auth to /cart")
-    public Response sendAuthGetCartRequest(String token) {
+    @Step("Send GET credit card request to /accounts")
+    public Response sendGetAccountsCreditCardRequest(String id) {
         Response response = given()
                 .spec(requestSpec)
-                .header("x-auth", token)
                 .and()
                 .when()
-                .get("/cart");
+                .get("/r/frs/productInfo/kreditkarte/" + id);
         response.then().spec(responseSpec);
         return response;
 
